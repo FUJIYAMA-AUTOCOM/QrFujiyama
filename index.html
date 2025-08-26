@@ -6,9 +6,9 @@
     <title>Formulario de Contacto</title>
     <style>
         :root {
-            --primary: #25D366;
+            --primary: #8f8f8f;
             --portafolio: #298b81;
-            --secondary: #128C7E;
+            --secondary: #c1ccca;
             --light: #f5f5f5;
             --dark: #333;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
 
         header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         .logo {
@@ -136,7 +136,7 @@
             display: inline-block;
             padding: 0.75rem 1.5rem;
             background-color: var(--primary);
-            color: white;
+            color: rgb(3, 3, 3);
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -173,9 +173,9 @@
 
         .qr-message {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
             padding: 1rem;
-            background-color: #e9f7ef;
+            background-color: #0a0a0a;
             border-radius: 4px;
             color: var(--secondary);
         }
@@ -269,7 +269,7 @@
 
             </div>
             <h1>Formulario de Contacto</h1>
-            <p>Por favor complete sus datos para que podamos atenderle mejor</p>
+            <p>Descubre más sobre este Kia aquí</p>
         </header>
 
         <div class="qr-message">
@@ -528,7 +528,7 @@ function submitForm() {
                                 `Estoy interesado en: ${formData.interes}. ` +
                                 `${formData.comentarios ? 'Comentarios: ' + formData.comentarios : ''}`;
                 
-                const numeroAsesor = "573024594888"; // Cambiar por número real
+                const numeroAsesor = "573178942092"; // Cambiar por número real
                 const urlWhatsApp = `https://wa.me/${numeroAsesor}?text=${encodeURIComponent(mensaje)}`;
 
                 // Asignar enlace al botón

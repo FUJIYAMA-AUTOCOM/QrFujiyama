@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
+    <title>-Formulario de Contacto</title>
     <style>
         :root {
             --primary: #8f8f8f;
@@ -524,10 +524,7 @@ function submitForm() {
             
             if (data.status === 'OK') {
                 // Construir mensaje dinámico
-                const mensaje = `Hola, soy ${formData.nombre} vengo de ${formData.origen}. ` +
-                                `Mi teléfono es ${formData.telefono}. ` +
-                                `Estoy interesado en: ${formData.interes}. ` +
-                                `${formData.comentarios ? 'Comentarios: ' + formData.comentarios : ''}`;
+                const mensaje = `Hola, quiero contactar un asesor`;
                 
                 const numeroAsesor = "573178942092"; // Cambiar por número real
                 const urlWhatsApp = `https://wa.me/${numeroAsesor}?text=${encodeURIComponent(mensaje)}`;
